@@ -1,0 +1,141 @@
+{
+  "generated": "2026-03-28T11:57:47.769883",
+  "article_title": "BIM-Informed Bayesian Post-Hoc Correction for CNN-Based Concrete Defect Classification",
+  "datasets": {
+    "CODEBRIM": {
+      "classes": 5,
+      "test_n": 598
+    },
+    "SDNET2018_6class": {
+      "classes": 6,
+      "test_n": 8420
+    }
+  },
+  "experiment_A_codebrim": {
+    "baseline_acc": 0.7592,
+    "baseline_f1": 0.6393,
+    "bpc_acc": 0.7692,
+    "bpc_f1": 0.6543,
+    "oracle_acc": 0.9682,
+    "oracle_f1": 0.9577,
+    "delta_acc_pct": 1.3,
+    "delta_f1_pct": 2.3
+  },
+  "experiment_B_pcrr": {
+    "total_errors_baseline": 144,
+    "total_errors_bpc": 138,
+    "reduction_pct": 4.2
+  },
+  "experiment_C_sensitivity_codebrim": {
+    "f1_full_prior": 0.6543,
+    "f1_half_prior": 0.6476,
+    "f1_no_prior": 0.6393,
+    "graceful_degradation": true
+  },
+  "experiment_F_method_comparison": {
+    "baseline": {
+      "acc": 0.9525,
+      "f1": 0.8998,
+      "cross_err": 24
+    },
+    "bpc_en206": {
+      "acc": 0.951,
+      "f1": 0.8983,
+      "cross_err": 17,
+      "mcnemar_p": 0.149
+    },
+    "rule_based": {
+      "acc": 0.9552,
+      "f1": 0.9023,
+      "cross_err": 0,
+      "mcnemar_p": 4e-06
+    },
+    "bpc_constrained": {
+      "acc": 0.9551,
+      "f1": 0.902,
+      "cross_err": 0,
+      "mcnemar_p": 4e-06
+    },
+    "learned_prior": {
+      "acc": 0.9495,
+      "f1": 0.8832,
+      "cross_err": 0,
+      "mcnemar_p": 0.106
+    },
+    "bpc_tau05": {
+      "acc": 0.9521,
+      "f1": 0.8997,
+      "cross_err": 20,
+      "mcnemar_p": 0.735
+    },
+    "bpc_tau20": {
+      "acc": 0.9388,
+      "f1": 0.8773,
+      "cross_err": 17,
+      "mcnemar_p": 0.0
+    }
+  },
+  "experiment_G_bootstrap": {
+    "n_bootstrap": 2000,
+    "rule_vs_baseline": {
+      "delta_acc_ci": [
+        0.0017,
+        0.0039
+      ],
+      "delta_f1_ci": [
+        0.0013,
+        0.0043
+      ],
+      "p_better_acc": 1.0,
+      "p_better_f1": 1.0
+    }
+  },
+  "experiment_H_error_decomposition": {
+    "baseline_total": 400,
+    "baseline_cross": 24,
+    "baseline_intra": 376,
+    "corrected_total": 377,
+    "corrected_cross": 0,
+    "corrected_intra": 377,
+    "cross_reduction_pct": 100.0,
+    "per_element": {
+      "Deck": {
+        "n": 2045,
+        "cross_before": 14,
+        "cross_after": 0
+      },
+      "Wall": {
+        "n": 2723,
+        "cross_before": 8,
+        "cross_after": 0
+      },
+      "Pavement": {
+        "n": 3652,
+        "cross_before": 2,
+        "cross_after": 0
+      }
+    }
+  },
+  "experiment_E_scalability": {
+    "dma_range": "94-100%",
+    "optimized_2000elem_ms": 19.8,
+    "max_speedup": "57.5x",
+    "realtime_capable": true
+  },
+  "key_findings": [
+    "BIM-informed rule-based correction eliminates 100% of cross-element misclassifications (24\u21920)",
+    "Statistically significant: McNemar p<0.001, Bootstrap \u0394Acc CI [+0.0017, +0.0039], P(better)=1.000",
+    "Rule-based and constrained BPC are functionally equivalent (99.99% agreement)",
+    "Soft Bayesian correction (EN 206) reduces cross-errors by 29% but is not significant for overall accuracy",
+    "Method is plug-and-play: no retraining, works with any CNN classifier",
+    "BIM mapping scalable to 2000 elements at <20ms (real-time capable)",
+    "Remaining 377 errors are intra-element (crack vs no_crack) \u2014 not addressable by BIM context"
+  ],
+  "article_contributions": [
+    "First formalization of BIM-informed Bayesian post-hoc correction for defect classification",
+    "Empirical comparison of 6 post-hoc correction strategies on 8420-image test set",
+    "Demonstration that deterministic element-constrained correction outperforms soft priors",
+    "Error decomposition framework distinguishing cross-element from intra-element errors",
+    "Real-time BIM-defect mapping validated up to 2000 elements with 57.5x speedup"
+  ]
+}

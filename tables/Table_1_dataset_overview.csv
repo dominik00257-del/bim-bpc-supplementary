@@ -1,0 +1,3 @@
+Dataset,Classes,Train,Val,Test,Total,Image_Size,Task
+SDNET2018 6-class,6,39261,8411,8420,56092,256x256,Element-aware crack classification
+CODEBRIM 5-class,5,4440,598,598,5636,224x224,Multi-target defect classification

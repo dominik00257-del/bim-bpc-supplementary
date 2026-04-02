@@ -1,0 +1,55 @@
+{
+  "experiment": "H_qualitative_analysis",
+  "n_test": 8420,
+  "corrected_count": 23,
+  "still_wrong_count": 377,
+  "confident_correct_count": 6165,
+  "element_analysis": {
+    "Deck": {
+      "n": 2045,
+      "baseline_acc": 0.934,
+      "corrected_acc": 0.9403,
+      "baseline_f1": 0.3462,
+      "corrected_f1": 0.8682,
+      "baseline_cross_err": 14,
+      "corrected_cross_err": 0,
+      "baseline_intra_err": 121,
+      "corrected_intra_err": 122
+    },
+    "Wall": {
+      "n": 2723,
+      "baseline_acc": 0.9368,
+      "corrected_acc": 0.9398,
+      "baseline_f1": 0.4528,
+      "corrected_f1": 0.9065,
+      "baseline_cross_err": 8,
+      "corrected_cross_err": 0,
+      "baseline_intra_err": 164,
+      "corrected_intra_err": 164
+    },
+    "Pavement": {
+      "n": 3652,
+      "baseline_acc": 0.9745,
+      "corrected_acc": 0.9751,
+      "baseline_f1": 0.4657,
+      "corrected_f1": 0.9323,
+      "baseline_cross_err": 2,
+      "corrected_cross_err": 0,
+      "baseline_intra_err": 91,
+      "corrected_intra_err": 91
+    }
+  },
+  "error_decomposition": {
+    "baseline": {
+      "total": 400,
+      "cross": 24,
+      "intra": 376
+    },
+    "bim_corrected": {
+      "total": 377,
+      "cross": 0,
+      "intra": 377
+    },
+    "cross_reduction_pct": 100.0
+  }
+}

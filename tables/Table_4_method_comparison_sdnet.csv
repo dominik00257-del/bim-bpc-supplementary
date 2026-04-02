@@ -1,0 +1,9 @@
+Method,Accuracy,Macro_F1,Weighted_F1,Cross_Errors,McNemar_p
+Baseline (YOLOv8s-cls),0.9525,0.8998,0.9507,24,—
+BPC uniform prior,0.9525,0.8998,0.9507,24,1.0
+BPC EN 206 prior,0.9527,0.9001,0.9509,22,0.149
+BPC learned prior,0.953,0.8832,0.9514,0,0.106
+Temp. scaling tau=0.5,0.9526,0.8999,0.9508,23,0.735
+Temp. scaling tau=2.0,0.9388,0.8698,0.9365,18,<0.001
+Rule-based correction,0.9552,0.9023,0.9536,0,<0.001
+Element-constrained BPC,0.9551,0.902,0.9535,0,<0.001

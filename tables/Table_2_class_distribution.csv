@@ -1,0 +1,12 @@
+Dataset,Class,Element_Type,Train,Val,Test,Total,Pct
+SDNET2018,Deck_crack,Deck,1417,304,304,2025,3.6%
+SDNET2018,Deck_no_crack,Deck,8117,1739,1739,11595,20.7%
+SDNET2018,Wall_crack,Wall,2696,577,578,3851,6.9%
+SDNET2018,Wall_no_crack,Wall,10001,2143,2143,14287,25.5%
+SDNET2018,Pavement_crack,Pavement,1826,391,391,2608,4.6%
+SDNET2018,Pavement_no_crack,Pavement,15204,3257,3265,21726,38.7%
+CODEBRIM,crack,Various,3516,474,475,4465,79.2%
+CODEBRIM,spallation,Various,352,48,48,448,7.9%
+CODEBRIM,efflorescence,Various,225,30,30,285,5.1%
+CODEBRIM,exposed_bars,Various,197,27,27,251,4.5%
+CODEBRIM,corrosion_stain,Various,150,19,18,187,3.3%

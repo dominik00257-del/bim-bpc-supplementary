@@ -1,0 +1,61 @@
+{
+  "pair_results": [
+    {
+      "actual": "ExposedBars",
+      "predicted": "CorrosionStain",
+      "reason": "Steel-related: BIM knows if element has rebar",
+      "base_count": 26,
+      "bpc_count": 28,
+      "delta": 2,
+      "pcrr": -7.7
+    },
+    {
+      "actual": "Spallation",
+      "predicted": "Crack",
+      "reason": "Surface damage: BIM exposure class differentiates",
+      "base_count": 18,
+      "bpc_count": 18,
+      "delta": 0,
+      "pcrr": 0.0
+    },
+    {
+      "actual": "CorrosionStain",
+      "predicted": "ExposedBars",
+      "reason": "Reverse pair: corrosion vs exposed rebar",
+      "base_count": 19,
+      "bpc_count": 16,
+      "delta": -3,
+      "pcrr": 15.8
+    },
+    {
+      "actual": "Efflorescence",
+      "predicted": "CorrosionStain",
+      "reason": "Discoloration: BIM material resolves",
+      "base_count": 1,
+      "bpc_count": 2,
+      "delta": 1,
+      "pcrr": -100.0
+    },
+    {
+      "actual": "Crack",
+      "predicted": "Spallation",
+      "reason": "Reverse: crack misclassified as spalling",
+      "base_count": 2,
+      "bpc_count": 1,
+      "delta": -1,
+      "pcrr": 50.0
+    },
+    {
+      "actual": "ExposedBars",
+      "predicted": "Spallation",
+      "reason": "Structural damage types",
+      "base_count": 1,
+      "bpc_count": 1,
+      "delta": 0,
+      "pcrr": 0.0
+    }
+  ],
+  "total_errors_baseline": 144,
+  "total_errors_bpc": 138,
+  "overall_error_reduction_pct": 4.2
+}

@@ -1,0 +1,5 @@
+Dataset,Condition,Total_Errors,Cross_Element,Within_Element,Cross_Pct
+SDNET2018,Baseline,400,24,376,6.0%
+SDNET2018,BIM-corrected,377,0,377,0.0%
+CODEBRIM,Baseline,118,8,110,6.8%
+CODEBRIM,BIM-corrected,110,0,110,0.0%

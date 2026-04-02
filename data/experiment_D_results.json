@@ -1,0 +1,14 @@
+{
+  "D1_baseline": {
+    "n_images": 1200,
+    "crack_recall": 0.9483,
+    "fp_rate": 0.915,
+    "binary_accuracy": 0.5167
+  },
+  "D2_bpc": {
+    "n_images": 1200,
+    "crack_recall": 0.97,
+    "fp_rate": 0.9317,
+    "binary_accuracy": 0.5192
+  }
+}

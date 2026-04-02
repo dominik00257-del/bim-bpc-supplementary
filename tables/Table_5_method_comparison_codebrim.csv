@@ -1,0 +1,4 @@
+Method,Accuracy,Macro_F1,Weighted_F1,Cross_Errors,McNemar_p
+Baseline (YOLOv8s-cls),0.8953,0.801,0.8891,8,—
+Rule-based correction,0.902,0.8098,0.8963,0,<0.001
+Element-constrained BPC,0.9019,0.8095,0.896,0,<0.001

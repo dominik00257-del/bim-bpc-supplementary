@@ -1,0 +1,158 @@
+{
+  "experiment": "F_method_comparison",
+  "dataset": "SDNET2018_6class",
+  "test_images": 8420,
+  "class_names": [
+    "Deck_crack",
+    "Deck_no_crack",
+    "Pavement_crack",
+    "Pavement_no_crack",
+    "Wall_crack",
+    "Wall_no_crack"
+  ],
+  "methods": {
+    "Baseline (Image-only)": {
+      "accuracy": 0.9525,
+      "macro_f1": 0.8998,
+      "weighted_f1": 0.951,
+      "cross_element_errors": 24
+    },
+    "BIM-BPC (EN 206)": {
+      "accuracy": 0.951,
+      "macro_f1": 0.8983,
+      "weighted_f1": 0.9501,
+      "cross_element_errors": 17
+    },
+    "Rule-based": {
+      "accuracy": 0.9552,
+      "macro_f1": 0.9023,
+      "weighted_f1": 0.9537,
+      "cross_element_errors": 0
+    },
+    "Learned Prior": {
+      "accuracy": 0.9495,
+      "macro_f1": 0.8832,
+      "weighted_f1": 0.9458,
+      "cross_element_errors": 0
+    },
+    "Temp-scaled BPC (\u03c4=0.5)": {
+      "accuracy": 0.9521,
+      "macro_f1": 0.8997,
+      "weighted_f1": 0.951,
+      "cross_element_errors": 20
+    },
+    "Temp-scaled BPC (\u03c4=2.0)": {
+      "accuracy": 0.9388,
+      "macro_f1": 0.8773,
+      "weighted_f1": 0.9401,
+      "cross_element_errors": 17
+    }
+  },
+  "mcnemar_tests": {
+    "Baseline (Image-only) vs BIM-BPC (EN 206)": {
+      "b_wins": 28,
+      "a_wins": 41,
+      "chi2": 2.087,
+      "p_value": 0.148562,
+      "significance": "n.s."
+    },
+    "Baseline (Image-only) vs Rule-based": {
+      "b_wins": 23,
+      "a_wins": 0,
+      "chi2": 21.0435,
+      "p_value": 4e-06,
+      "significance": "***"
+    },
+    "Baseline (Image-only) vs Learned Prior": {
+      "b_wins": 98,
+      "a_wins": 123,
+      "chi2": 2.6063,
+      "p_value": 0.106438,
+      "significance": "n.s."
+    },
+    "Baseline (Image-only) vs Temp-scaled BPC (\u03c4=0.5)": {
+      "b_wins": 16,
+      "a_wins": 19,
+      "chi2": 0.1143,
+      "p_value": 0.735317,
+      "significance": "n.s."
+    },
+    "Baseline (Image-only) vs Temp-scaled BPC (\u03c4=2.0)": {
+      "b_wins": 48,
+      "a_wins": 163,
+      "chi2": 61.5924,
+      "p_value": 0.0,
+      "significance": "***"
+    },
+    "BIM-BPC (EN 206) vs Rule-based": {
+      "b_wins": 58,
+      "a_wins": 22,
+      "chi2": 15.3125,
+      "p_value": 9.1e-05,
+      "significance": "***"
+    },
+    "BIM-BPC (EN 206) vs Learned Prior": {
+      "b_wins": 133,
+      "a_wins": 145,
+      "chi2": 0.4353,
+      "p_value": 0.509423,
+      "significance": "n.s."
+    },
+    "BIM-BPC (EN 206) vs Temp-scaled BPC (\u03c4=0.5)": {
+      "b_wins": 22,
+      "a_wins": 12,
+      "chi2": 2.3824,
+      "p_value": 0.122713,
+      "significance": "n.s."
+    },
+    "BIM-BPC (EN 206) vs Temp-scaled BPC (\u03c4=2.0)": {
+      "b_wins": 20,
+      "a_wins": 122,
+      "chi2": 71.838,
+      "p_value": 0.0,
+      "significance": "***"
+    },
+    "Rule-based vs Learned Prior": {
+      "b_wins": 75,
+      "a_wins": 123,
+      "chi2": 11.1566,
+      "p_value": 0.000837,
+      "significance": "***"
+    },
+    "Rule-based vs Temp-scaled BPC (\u03c4=0.5)": {
+      "b_wins": 12,
+      "a_wins": 38,
+      "chi2": 12.5,
+      "p_value": 0.000407,
+      "significance": "***"
+    },
+    "Rule-based vs Temp-scaled BPC (\u03c4=2.0)": {
+      "b_wins": 41,
+      "a_wins": 179,
+      "chi2": 85.3136,
+      "p_value": 0.0,
+      "significance": "***"
+    },
+    "Learned Prior vs Temp-scaled BPC (\u03c4=0.5)": {
+      "b_wins": 135,
+      "a_wins": 113,
+      "chi2": 1.7782,
+      "p_value": 0.182367,
+      "significance": "n.s."
+    },
+    "Learned Prior vs Temp-scaled BPC (\u03c4=2.0)": {
+      "b_wins": 164,
+      "a_wins": 254,
+      "chi2": 18.9498,
+      "p_value": 1.3e-05,
+      "significance": "***"
+    },
+    "Temp-scaled BPC (\u03c4=0.5) vs Temp-scaled BPC (\u03c4=2.0)": {
+      "b_wins": 32,
+      "a_wins": 144,
+      "chi2": 70.0057,
+      "p_value": 0.0,
+      "significance": "***"
+    }
+  }
+}

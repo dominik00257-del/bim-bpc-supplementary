@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "baseline": {
+      "accuracy": 0.7592,
+      "macro_f1": 0.6393,
+      "per_class": {
+        "CorrosionStain": 0.7335,
+        "Crack": 0.8649,
+        "Efflorescence": 0.7871,
+        "ExposedBars": 0.4779,
+        "Spallation": 0.3333
+      }
+    },
+    "bayesian": {
+      "accuracy": 0.7692,
+      "macro_f1": 0.6543,
+      "per_class": {
+        "CorrosionStain": 0.7278,
+        "Crack": 0.8688,
+        "Efflorescence": 0.8054,
+        "ExposedBars": 0.5094,
+        "Spallation": 0.36
+      }
+    },
+    "oracle": {
+      "accuracy": 0.9682,
+      "macro_f1": 0.9577,
+      "per_class": {
+        "CorrosionStain": 0.9769,
+        "Crack": 0.9763,
+        "Efflorescence": 0.9536,
+        "ExposedBars": 0.95,
+        "Spallation": 0.9315
+      }
+    }
+  },
+  "priors_used": {
+    "Wall_exterior_RC_XC4": {
+      "Crack": 0.3,
+      "Spallation": 0.1,
+      "CorrosionStain": 0.2,
+      "ExposedBars": 0.05,
+      "Efflorescence": 0.35
+    },
+    "Wall_interior_plaster": {
+      "Crack": 0.55,
+      "Spallation": 0.05,
+      "CorrosionStain": 0.02,
+      "ExposedBars": 0.03,
+      "Efflorescence": 0.35
+    },
+    "Slab_bridge_deck_XD3": {
+      "Crack": 0.2,
+      "Spallation": 0.25,
+      "CorrosionStain": 0.25,
+      "ExposedBars": 0.2,
+      "Efflorescence": 0.1
+    },
+    "Slab_pavement_XF3": {
+      "Crack": 0.35,
+      "Spallation": 0.3,
+      "CorrosionStain": 0.1,
+      "ExposedBars": 0.1,
+      "Efflorescence": 0.15
+    },
+    "Column_RC_XC3": {
+      "Crack": 0.2,
+      "Spallation": 0.15,
+      "CorrosionStain": 0.3,
+      "ExposedBars": 0.25,
+      "Efflorescence": 0.1
+    },
+    "Beam_prestressed_XC2": {
+      "Crack": 0.4,
+      "Spallation": 0.15,
+      "CorrosionStain": 0.15,
+      "ExposedBars": 0.2,
+      "Efflorescence": 0.1
+    },
+    "uniform": {
+      "Crack": 0.2,
+      "Spallation": 0.2,
+      "CorrosionStain": 0.2,
+      "ExposedBars": 0.2,
+      "Efflorescence": 0.2
+    }
+  },
+  "n_test_images": 598
+}

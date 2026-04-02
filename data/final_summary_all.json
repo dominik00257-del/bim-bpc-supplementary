@@ -1,0 +1,343 @@
+{
+  "codebrim_5class": {
+    "baseline": {
+      "accuracy": 0.7592,
+      "macro_f1": 0.6393,
+      "per_class": {
+        "CorrosionStain": 0.7335,
+        "Crack": 0.8649,
+        "Efflorescence": 0.7871,
+        "ExposedBars": 0.4779,
+        "Spallation": 0.3333
+      }
+    },
+    "bayesian": {
+      "accuracy": 0.7692,
+      "macro_f1": 0.6543,
+      "per_class": {
+        "CorrosionStain": 0.7278,
+        "Crack": 0.8688,
+        "Efflorescence": 0.8054,
+        "ExposedBars": 0.5094,
+        "Spallation": 0.36
+      }
+    },
+    "oracle": {
+      "accuracy": 0.9682,
+      "macro_f1": 0.9577,
+      "per_class": {
+        "CorrosionStain": 0.9769,
+        "Crack": 0.9763,
+        "Efflorescence": 0.9536,
+        "ExposedBars": 0.95,
+        "Spallation": 0.9315
+      }
+    }
+  },
+  "sdnet_6class": {
+    "baseline": {
+      "accuracy": 0.9525,
+      "macro_f1": 0.8998
+    },
+    "bpc": {
+      "accuracy": 0.9553,
+      "macro_f1": 0.9022
+    },
+    "improvement": {
+      "delta_accuracy": 0.0029,
+      "delta_macro_f1": 0.0024,
+      "pct_accuracy": 0.3,
+      "pct_macro_f1": 0.27
+    },
+    "mcnemar": {
+      "b01_bpc_fixed": 39,
+      "b10_bpc_broke": 15,
+      "net_improvement": 24,
+      "chi2": 9.7963,
+      "p_value": 0.0017486370049757394
+    },
+    "n_test": 8420,
+    "classes": [
+      "Deck_crack",
+      "Deck_no_crack",
+      "Pavement_crack",
+      "Pavement_no_crack",
+      "Wall_crack",
+      "Wall_no_crack"
+    ],
+    "cm_baseline": [
+      [
+        204,
+        99,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        22,
+        1706,
+        0,
+        5,
+        0,
+        7
+      ],
+      [
+        0,
+        0,
+        328,
+        63,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        28,
+        3231,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        467,
+        112
+      ],
+      [
+        0,
+        3,
+        0,
+        5,
+        52,
+        2084
+      ]
+    ],
+    "cm_bpc": [
+      [
+        202,
+        103,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        18,
+        1721,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        319,
+        73,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        3246,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        465,
+        114
+      ],
+      [
+        0,
+        1,
+        0,
+        2,
+        50,
+        2091
+      ]
+    ]
+  },
+  "sensitivity_sdnet6": {
+    "0.0": {
+      "alpha": 0.0,
+      "accuracy": 0.9553,
+      "macro_f1": 0.9022,
+      "weighted_f1": 0.9536,
+      "cross_element_errors": 4,
+      "per_class_f1": {
+        "Deck_crack": 0.7695,
+        "Deck_no_crack": 0.9655,
+        "Pavement_crack": 0.88,
+        "Pavement_no_crack": 0.9863,
+        "Wall_crack": 0.8501,
+        "Wall_no_crack": 0.9616
+      }
+    },
+    "0.1": {
+      "alpha": 0.1,
+      "accuracy": 0.9551,
+      "macro_f1": 0.9019,
+      "weighted_f1": 0.9533,
+      "cross_element_errors": 5,
+      "per_class_f1": {
+        "Deck_crack": 0.7681,
+        "Deck_no_crack": 0.9649,
+        "Pavement_crack": 0.8803,
+        "Pavement_no_crack": 0.9863,
+        "Wall_crack": 0.8501,
+        "Wall_no_crack": 0.9614
+      }
+    },
+    "0.2": {
+      "alpha": 0.2,
+      "accuracy": 0.9552,
+      "macro_f1": 0.9021,
+      "weighted_f1": 0.9535,
+      "cross_element_errors": 5,
+      "per_class_f1": {
+        "Deck_crack": 0.7681,
+        "Deck_no_crack": 0.9649,
+        "Pavement_crack": 0.8819,
+        "Pavement_no_crack": 0.9865,
+        "Wall_crack": 0.8501,
+        "Wall_no_crack": 0.9614
+      }
+    },
+    "0.3": {
+      "alpha": 0.3,
+      "accuracy": 0.9553,
+      "macro_f1": 0.9025,
+      "weighted_f1": 0.9536,
+      "cross_element_errors": 5,
+      "per_class_f1": {
+        "Deck_crack": 0.7681,
+        "Deck_no_crack": 0.9649,
+        "Pavement_crack": 0.8837,
+        "Pavement_no_crack": 0.9866,
+        "Wall_crack": 0.8501,
+        "Wall_no_crack": 0.9614
+      }
+    },
+    "0.4": {
+      "alpha": 0.4,
+      "accuracy": 0.955,
+      "macro_f1": 0.9018,
+      "weighted_f1": 0.9533,
+      "cross_element_errors": 7,
+      "per_class_f1": {
+        "Deck_crack": 0.7681,
+        "Deck_no_crack": 0.9646,
+        "Pavement_crack": 0.881,
+        "Pavement_no_crack": 0.9865,
+        "Wall_crack": 0.8493,
+        "Wall_no_crack": 0.9612
+      }
+    },
+    "0.5": {
+      "alpha": 0.5,
+      "accuracy": 0.9548,
+      "macro_f1": 0.9014,
+      "weighted_f1": 0.953,
+      "cross_element_errors": 10,
+      "per_class_f1": {
+        "Deck_crack": 0.7666,
+        "Deck_no_crack": 0.964,
+        "Pavement_crack": 0.8801,
+        "Pavement_no_crack": 0.9863,
+        "Wall_crack": 0.8504,
+        "Wall_no_crack": 0.9612
+      }
+    },
+    "0.6": {
+      "alpha": 0.6,
+      "accuracy": 0.9543,
+      "macro_f1": 0.901,
+      "weighted_f1": 0.9526,
+      "cross_element_errors": 13,
+      "per_class_f1": {
+        "Deck_crack": 0.7666,
+        "Deck_no_crack": 0.9632,
+        "Pavement_crack": 0.8789,
+        "Pavement_no_crack": 0.986,
+        "Wall_crack": 0.8504,
+        "Wall_no_crack": 0.9607
+      }
+    },
+    "0.7": {
+      "alpha": 0.7,
+      "accuracy": 0.9542,
+      "macro_f1": 0.901,
+      "weighted_f1": 0.9525,
+      "cross_element_errors": 14,
+      "per_class_f1": {
+        "Deck_crack": 0.7666,
+        "Deck_no_crack": 0.9632,
+        "Pavement_crack": 0.8796,
+        "Pavement_no_crack": 0.9858,
+        "Wall_crack": 0.8506,
+        "Wall_no_crack": 0.9605
+      }
+    },
+    "0.8": {
+      "alpha": 0.8,
+      "accuracy": 0.9537,
+      "macro_f1": 0.9006,
+      "weighted_f1": 0.9521,
+      "cross_element_errors": 16,
+      "per_class_f1": {
+        "Deck_crack": 0.766,
+        "Deck_no_crack": 0.9623,
+        "Pavement_crack": 0.8787,
+        "Pavement_no_crack": 0.9855,
+        "Wall_crack": 0.8506,
+        "Wall_no_crack": 0.9602
+      }
+    },
+    "0.9": {
+      "alpha": 0.9,
+      "accuracy": 0.9532,
+      "macro_f1": 0.9006,
+      "weighted_f1": 0.9517,
+      "cross_element_errors": 21,
+      "per_class_f1": {
+        "Deck_crack": 0.7684,
+        "Deck_no_crack": 0.962,
+        "Pavement_crack": 0.879,
+        "Pavement_no_crack": 0.9851,
+        "Wall_crack": 0.8499,
+        "Wall_no_crack": 0.9593
+      }
+    },
+    "1.0": {
+      "alpha": 1.0,
+      "accuracy": 0.9525,
+      "macro_f1": 0.8998,
+      "weighted_f1": 0.951,
+      "cross_element_errors": 24,
+      "per_class_f1": {
+        "Deck_crack": 0.7684,
+        "Deck_no_crack": 0.9614,
+        "Pavement_crack": 0.8758,
+        "Pavement_no_crack": 0.9845,
+        "Wall_crack": 0.8499,
+        "Wall_no_crack": 0.9586
+      }
+    }
+  },
+  "key_findings": {
+    "cross_element_error_reduction": "83.3%",
+    "mcnemar_p_value": 0.0017486370049757394,
+    "statistically_significant": true,
+    "graceful_degradation": true,
+    "no_circular_reasoning": true
+  }
+}

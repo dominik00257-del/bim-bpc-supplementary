@@ -1,0 +1,10 @@
+Architecture,Params_M,Method,Accuracy,Macro_F1,Weighted_F1,Cross_Errors,McNemar_p
+YOLOv8s-cls,5.1,Baseline,0.9525,0.8998,0.9507,24,—
+YOLOv8s-cls,5.1,Rule-based,0.9552,0.9023,0.9536,0,<0.001
+YOLOv8s-cls,5.1,BPC constrained,0.9551,0.902,0.9535,0,<0.001
+EfficientNet-B0,4.0,Baseline,0.9437,0.8833,0.9422,18,—
+EfficientNet-B0,4.0,Rule-based,0.9458,0.8846,0.9443,0,<0.001
+EfficientNet-B0,4.0,BPC constrained,0.9457,0.8844,0.9442,0,<0.001
+ResNet-18,11.2,Baseline,0.9342,0.865,0.9321,52,—
+ResNet-18,11.2,Rule-based,0.94,0.8698,0.9379,0,<0.001
+ResNet-18,11.2,BPC constrained,0.94,0.87,0.9379,0,<0.001

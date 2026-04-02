@@ -1,0 +1,14 @@
+Parameter,YOLOv8s_cls,EfficientNet_B0,ResNet_18
+Parameters (M),5.08,4.01,11.18
+Pretrained,ImageNet,ImageNet,ImageNet
+Input size,224x224,224x224,224x224
+Optimizer,SGD,AdamW,AdamW
+Learning rate,0.01,0.001,0.001
+LR scheduler,Cosine,ReduceOnPlateau,ReduceOnPlateau
+Weight decay,0.0005,0.01,0.01
+Batch size,64,64,64
+Epochs (max),25,25,25
+Early stopping,8,8,8
+Loss,CrossEntropy,CrossEntropy,CrossEntropy
+GPU,Tesla T4,Tesla T4,Tesla T4
+Training time,~45 min,~40 min,~100 min
