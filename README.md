@@ -1,10 +1,8 @@
-# BIM-Informed Bayesian Post-Correction (BIM-BPC)
+# BIM-informed Bayesian post-hoc correction for deep learning-based concrete defect classification: eliminating cross-element misclassifications through element-type priors
 
-## Supplementary Materials for Automation in Construction
+## Supplementary Materials
 
-**Paper:** BIM-informed Bayesian post-correction for structural-element-aware
-defect classification: eliminating cross-element misclassifications
-through spatial context priors
+**Paper:** BIM-informed Bayesian post-hoc correction for deep learning-based concrete defect classification: eliminating cross-element misclassifications through element-type priors
 
 ---
 
